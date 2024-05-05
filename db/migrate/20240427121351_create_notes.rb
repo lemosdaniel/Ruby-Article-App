@@ -3,7 +3,6 @@ class CreateNotes < ActiveRecord::Migration[7.1]
     create_table :notes do |t|
       t.string :title
       t.text :description
-      t.bool :publish
 
       t.timestamps
     end

@@ -16,7 +16,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_27_125740) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "publish"
+    t.boolean "publish", default: false
   end
 
 end
