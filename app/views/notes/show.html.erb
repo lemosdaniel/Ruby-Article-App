@@ -1,0 +1,20 @@
+<div class="rs__main__page rs__show__article">
+  <div class="rs__cantainer">
+    <div class="rs__notice__wrap">
+      <p style="color: green" class="rs__notice"><%= notice %></p>
+    </div>
+    <div class="rs__heading__wrap">
+      <h1>Review Article</h1>
+    </div>
+    <div class="rs__articles__wrap">
+      <div id="notes">
+        <%= render @note %>
+      </div>
+    </div>
+    <div class="rs__btn__wrap">
+      <%= link_to "Edit this Article", edit_note_path(@note) %>
+      <%= link_to "Back to Articles", notes_path %>
+      <%= button_to "Destroy this Article", @note, method: :delete %>
+    </div>
+  </div>
+</div>

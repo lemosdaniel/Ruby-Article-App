@@ -1,0 +1,206 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.rs__main__page {}
+
+.rs__main__page .rs__cantainer {
+}
+
+.rs__main__page .rs__heading__wrap {}
+
+.rs__main__page .rs__heading__wrap h1 {
+    padding: 15px 50px;
+    border-bottom: 1px dashed black;
+    margin: 0px 0px 50px;
+}
+
+.rs__main__page .rs__articles__wrap {}
+
+.rs__main__page .rs__articles__wrap #notes {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1200px;
+    margin: 0px auto 30px;
+    gap: 20px;
+}
+
+
+.rs__main__page .rs__articles__wrap .single__article {
+    border-bottom: 1px dashed black;
+    padding: 15px;
+    box-shadow: -3px 3px 3px rgb(0 0 0 / 10%);
+    border: 1px solid rgb(211 211 211 / 50%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rs__main__page .rs__articles__wrap .single__article a {
+    border: 1px solid black;
+    padding: 5px 14px 8px;
+    display: inline-block;
+    text-transform: capitalize;
+    color: black;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+.rs__main__page .rs__articles__wrap .single__article p {
+    margin: 0px 0px 10px;
+}
+
+.rs__main__page .rs__btn__wrap {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.rs__main__page .rs__btn__wrap a, .rs__main__page .rs__btn__wrap button {
+    background-color: black;
+    color: white;
+    padding: 7px 16px 11px;
+    display: flex;
+    width: fit-content;
+    margin: 0px 0px 50px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rs__main__page .rs__form__wrap {
+    width: 1200px;
+    margin: 0px auto 0px;
+}
+
+.rs__main__page .rs__form__wrap label {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px 0px 5px;
+}
+
+.rs__main__page .rs__form__wrap input, .rs__main__page .rs__form__wrap textarea, .rs__main__page .rs__form__wrap select {
+    width: 50%;
+    min-height: 42px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.rs__main__page .rs__form__wrap textarea {
+    min-height: 160px;
+}
+
+.rs__main__page .rs__form__wrap div {
+    margin: 0px 0px 16px;
+}
+
+.rs__main__page .rs__form__wrap input[type="submit"] {
+    width: fit-content;
+    background-color: black;
+    color: white;
+}
+
+.rs__main__page .rs__back__btn {
+    width: 1200px;
+    margin: 0px auto 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.rs__main__page .rs__back__btn a {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px 16px 10px;
+    display: flex;
+    width: fit-content;
+    margin: 0px 0px 50px;
+    cursor: pointer;
+}
+
+.rs__main__page.rs__show__article {}
+
+.rs__main__page.rs__show__article .rs__articles__wrap > div {
+    border-bottom: 1px dashed black;
+    padding: 15px;
+    box-shadow: -3px 3px 3px rgb(0 0 0 / 10%);
+    border: 1px solid rgb(211 211 211 / 50%);
+    border-radius: 8px;
+}
+
+.rs__main__page.rs__show__article .rs__articles__wrap p {
+    margin: 0px 0px 10px;
+}
+p.rs__notice {
+    background-color: green;
+    color: white !important;
+    text-align: center;
+    display: flex;
+    padding-left: 50px;
+}
+p.rs__one__line__show {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+.rs__main__page.rs__show__article p.rs__one__line__show {
+    overflow: unset;
+    text-overflow: unset;
+    text-wrap: unset;
+}
+
+.rs__main__page .rs__articles__wrap .rs__filters__wrap {
+    width: 1200px;
+    margin: 0px auto 30px;
+    border-bottom: 2px dotted black;
+    padding: 0px 0px 30px;
+}
+
+.rs__main__page .rs__articles__wrap .rs__filters__wrap .rs__filter {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.rs__main__page .rs__articles__wrap .rs__filters__wrap .rs__filter label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin: 0px 0px 6px;
+}
+
+.rs__main__page .rs__articles__wrap .rs__filters__wrap .rs__filter select {
+    width: 400px;
+    min-height: 41px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 0px 6px;
+}

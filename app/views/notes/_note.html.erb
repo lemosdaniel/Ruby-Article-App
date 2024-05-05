@@ -1,0 +1,17 @@
+  <div id="<%= dom_id note %>">
+    <p class="rs__one__line__show">
+      <strong>Title:</strong>
+      <%= note.title %>
+    </p>
+
+    <p class="rs__one__line__show">
+      <strong>Description:</strong>
+      <%= note.description %>
+    </p>
+    <p>
+    <strong>Publish:</strong>
+    <span class="rs__published__status" data-status-type=<%= note.publish %>>
+      <%= note.publish %>
+    </span>
+  </p>
+  </div>

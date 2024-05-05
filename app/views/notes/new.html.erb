@@ -1,0 +1,14 @@
+<div class="rs__main__page rs__all__articles">
+  <div class="rs__cantainer">
+    <div class="rs__heading__wrap">
+      <h1>New Article</h1>
+    </div>
+    <%= render "form", note: @note %>
+    <br>
+
+    <div class="rs__back__btn">
+      <%= link_to "Back to articles", notes_path %>
+    </div>
+
+  </div>
+</div>
