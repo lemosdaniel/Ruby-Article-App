@@ -43,7 +43,7 @@ body {
 
 .rs__main__page .rs__articles__wrap {}
 
-.rs__main__page .rs__articles__wrap #notes {
+.rs__main__page .rs__articles__wrap #articles {
     display: grid;
     grid-template-columns: 1fr;
     width: 1200px;

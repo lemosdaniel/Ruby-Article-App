@@ -19,19 +19,19 @@
       </select>
     </div>
   </div>
-  <div id="notes">
-    <% @notes.each do |note| %>
+  <div id="articles">
+    <% @articles.each do |article| %>
     <div class="single__article">
-        <%= render note %>
+        <%= render article %>
         <p>
-          <%= link_to "Show this article", note %>
+          <%= link_to "Show this article", article %>
         </p>
       </div>
     <% end %>
   </div>
   </div>
   <div class="rs__btn__wrap">
-    <%= link_to "New article", new_note_path %>
+    <%= link_to "New article", new_article_path %>
   </div>
   </div>
 </div>

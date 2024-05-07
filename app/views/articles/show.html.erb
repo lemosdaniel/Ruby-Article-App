@@ -7,14 +7,14 @@
       <h1>Review Article</h1>
     </div>
     <div class="rs__articles__wrap">
-      <div id="notes">
-        <%= render @note %>
+      <div id="articles">
+        <%= render @article %>
       </div>
     </div>
     <div class="rs__btn__wrap">
-      <%= link_to "Edit this Article", edit_note_path(@note) %>
-      <%= link_to "Back to Articles", notes_path %>
-      <%= button_to "Destroy this Article", @note, method: :delete %>
+      <%= link_to "Edit this Article", edit_article_path(@article) %>
+      <%= link_to "Back to Articles", articles_path %>
+      <%= button_to "Destroy this Article", @article, method: :delete %>
     </div>
   </div>
 </div>
